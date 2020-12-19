@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style-pets.css">
+</head>
+<body id="body">
+    <header class="header">
+        <div class="header-wrapper">
+            <a class="header-logo" href="../main/index.html">
+                <h1 class="header-logo__title">
+                    Cozy House 
+                </h1>
+                <div class="header-logo__subtitle">               
+                    Shelter for pets in Boston
+                </div>
+            </a>
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-list__item">
+                        <a class="navbar-list__link" href="../main/index.html">
+                        About the shelter
+                        </a>
+                    </li>
+                    <li class="navbar-list__item">
+                        <a class="navbar-list__link navbar-list__link_active">
+                        Our pets
+                        </a>
+                    </li>
+                    <li class="navbar-list__item">
+                        <a class="navbar-list__link disabled" disabled>
+                        Help the shelter
+                        </a>
+                    </li>
+                    <li class="navbar-list__item">
+                        <a class="navbar-list__link disabled" disabled>
+                        Contacts
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="burger-menu burger-menu_off" id="burger-menu">
+                <div class="burger-menu-header">
+                    <a class="header-logo_burger header-logo_burger_off" href="../main/index.html">
+                        <h1 class="header-logo__title_burger">
+                            Cozy House
+                        </h1>
+                        <div class="header-logo__subtitle_burger">
+                            Shelter for pets in Boston
+                        </div>
+                    </a>
+                    <button type="button" class="burger-menu_button" id="burger-menu_button">
+                        <img src="../../assets/icons/Burger.png" alt="" class="burger-menu_icon">
+                    </button>
+                    
+                </div>
+                <nav class="burger-menu_nav" id="burger-menu_nav">
+                    <a class="burger-menu_link burger-menu_link_active" id="burger-menu_link" href="../main/index.html">
+                        About the shelter
+                    </a>
+                    <a class="burger-menu_link" id="burger-menu_link" href="../pets/pets.html">
+                        Our pets
+                    </a>
+                    <a class="burger-menu_link  disabled" id="burger-menu_link" disabled>
+                        Help the shelter
+                    </a>
+                    <a class="burger-menu_link disabled" id="burger-menu_link" disabled>
+                        Contacts
+                    </a>
+                </nav>
+                <div class="burger-menu_overlay" id="burger-menu_overlay"></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="our-pets">
+        <div class="our-pets-content">
+            <h2 class="our-pets-content__header">
+                Our friends who<br> are looking for a house
+            </h2>
+            <div class="our-pets-content-slider">
+                
+            </div>
+            <div class="pagination">
+                <button type="button" class="pagination-button pagination-start-page" id="startPage"></button>
+                <button type="button" class="pagination-button pagination-prev-page" id="prevPage"></button>
+                <button type="button" class="pagination-button pagination-button__count-page" id="currentPage"></button>
+                <button type="button" class="pagination-button pagination-next-page" id="nextPage"></button>
+                <button type="button" class="pagination-button pagination-end-page" id="endPage"></button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-content-contacts">
+                <h2 class="footer-content-contacts__header">For questions and suggestions</h2>
+                <a class="footer-content-contacts__email" type="email" href="mailto:email@shelter.com">
+                    <img class="footer-content-contacts__email-icon" src="../../assets/icons/icon-email.svg" alt="email-icon">
+                    <span class="footer-content-contacts__email-address">email@shelter.com</span>
+                </a>
+                <a class="footer-content-contacts__phone-number" href="tel:+136745677554">
+                    <img class="footer-content-contacts__phone-number-icon" src="../../assets/icons/icon-phone.svg" alt="phone-icon">
+                    <span class="footer-content-contacts__phone-number-link">+13 674 567 75 54</span>
+                </a>
+            </div>
+            <div class="footer-content-locations">
+                <h2 class="footer-content-locations__header">We are waiting for your visit</h2>
+                <a class="footer-content-locations__central-street" href="https://goo.gl/maps/tk4b5HfTYpvTL7fR9">
+                    <img class="footer-content-locations__central-street-icon" src="../../assets/icons/icon-marker.svg" alt="marker-icon">
+                    <span class="footer-content-locations__central-street-link">1 Central Street, Boston (entrance from the store)</span>
+                </a>
+                <a class="footer-content-locations__south-park" href="https://goo.gl/maps/2RRqmamBdxx4wM2S8">
+                    <img class="footer-content-locations__south-park-icon" src="../../assets/icons/icon-marker.svg" alt="marker-icon">
+                    <span class="footer-content-locations__south-park-link">18 South Park, London </span>
+                </a>
+            </div>
+            <img class="footer-content__img" src="../../assets/images/footer-puppy.png" alt="">
+        </div>
+    </footer>
+
+    <div class="b-popup">
+        <div class="b-popup-wrapper">
+            <button class="b-popup-close">
+                <img src="../../assets/icons/close.svg" alt="">
+            </button>
+            <div class="b-popup-content" id="b-popup-content">
+                
+            </div>
+        </div>
+        <div class="overlay" id="overlay"></div>
+    </div>
+
+    <script src="./pets.js"></script> 
+</body>
+</html>
