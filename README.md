@@ -1,2 +1,2 @@
 # ilya-baklanov-JS2020Q3
-Private repository for @ilya-baklanov
+[Shelter](https://rolling-scopes-school.github.io/ilya-baklanov-JS2020Q3/virtual-keyboard/)
